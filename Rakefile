@@ -6,13 +6,13 @@ require_relative 'config/application'
 desc "create the database"
 task "db:create" do
   puts "Creating file #{DB_PATH} if it doesn't exist..."
-  `touch DB_PATH`
+  `touch #{DB_PATH}`
 end
 
 desc "drop the database"
 task "db:drop" do
   puts "Deleting #{DB_PATH}..."
-  `rm -rf DB_PATH`
+  `rm -rf #{DB_PATH}`
 end
 
 desc "migrate the database (options: VERSION=x, VERBOSE=false, SCOPE=blog)."
