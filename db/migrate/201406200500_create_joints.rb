@@ -4,8 +4,8 @@ require_relative '../config'
 
 class CreateJoints < ActiveRecord::Migration
   def change
-    create_table :light_speakers do |t|
-      t.integer :lightningtalk_id, :speaker_id
+    create_table :lightning_speakers do |t|
+      t.integer :lightning_talk_id, :speaker_id
   end
 end
 end

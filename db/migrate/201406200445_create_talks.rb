@@ -4,10 +4,10 @@ require_relative '../config'
 
 class CreateTalks < ActiveRecord::Migration
   def change
-    create_table :lightningtalks do |t|
+    create_table :lightning_talks do |t|
       t.string :name, :phase
       t.text :description
-      t.integer :votes
+      t.integer :vote_count
       t.date :time
     end
   end
